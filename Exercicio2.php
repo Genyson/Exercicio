@@ -26,4 +26,24 @@
 //  se não
 //      apresentar Nenhuma nota inserida
 
+$Contador = 1;
+$somanotas = 0;
+$sentinela = -1;
+
+while ($insiranota != $sentinela){
+    echo "Digite a nota do aluno:";
+    $insiranota = rtrim(fgets(STDIN));
+    $somanotas = $insiranota + $somanotas;
+    $Contador = $Contador + 1;
+}
+
+$media = $somanotas / $Contador;
+
+//if $Contador > 0;
+    echo "Media das notas inserida = "
+echo    $media;
+//else
+//    echo "Nenhuma nota inserida";
+
+
 
